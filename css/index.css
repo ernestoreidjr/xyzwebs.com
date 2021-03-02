@@ -1,0 +1,361 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #0D6EFD;
+    font-family: Poppins;
+}   
+
+h1 {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 300;
+}
+
+.btn.btn-primary.button1 {
+    padding: 15px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.btn.btn-outline-primary.button2 {
+    padding: 15px 30px;
+    display: block;
+    margin: 2rem auto 1rem auto;
+}
+
+.btn.btn-outline-light.button3 {
+    padding: 15px 30px;
+    margin: .5rem 0;
+}
+
+.btn.btn-outline-light.button4 {
+    padding: 15px 30px;
+    display: block;
+    margin: 2rem auto;
+}
+
+/* navbar */
+/* helper */
+
+.hide-desktop {
+    display: none;
+}
+
+.navigation {
+    position:absolute;
+    background: transparent;
+    width: 100vw;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+
+    overflow: hidden;
+}
+
+.nav-container {
+    height: 8vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 5rem 1fr auto 5rem;
+}
+
+.navigation .logo {
+    grid-column: 2/3;
+    display: grid;
+    align-items: center;
+}   
+
+.navigation .logo h4{
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #0D6EFD;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    grid-column: 3/4;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: end;
+    grid-auto-columns: 120px;
+}
+
+.navigation .menu li {
+    color: white;
+    font-size: 14px;
+}
+
+.navigation .menu li:hover{
+    color: #0D6EFD;
+    cursor: pointer;
+}
+
+/* carousel */
+
+.carousel-item {
+    height: 70vh;
+    
+    background: #0D6EFD;
+    color: white;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    overflow: hidden;
+}
+
+.container.carousel-slide {
+    position: absolute;
+    height: 70vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item h1 {
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+.carousel-item p {
+    font-weight: 300;
+    font-family: Poppins;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+}
+
+/* benefits */
+
+
+/* .benefits {
+    
+} */
+
+.benefits-item {
+    margin: 2rem 0;
+}
+
+.benefits h2 {
+    color: white;
+    
+}
+.benefits h3 {
+    color: white;
+    
+}
+.benefits p {
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+/* services */
+
+.services {
+    background: white;
+    overflow: hidden;
+}
+
+.title {
+    height: 22.5vh;
+}
+
+.title h2{
+   text-align: center;
+   font-weight: 500;
+   color: #0D6EFD;
+}
+
+.title p{
+    text-align: center;
+}
+
+.serviceItems {
+    padding: 1rem;
+    margin: 0 2rem;
+    margin-bottom: 5rem;
+    border-radius: 5px;
+    border: solid 1px #0D6EFD;
+}
+
+.icon-container {
+    margin: 1rem auto;
+    display: inline-block;
+    text-align: center;
+    background: #0D6EFD;
+    height: 75px;
+    width: 75px;
+    border-radius: 80%;
+}
+
+.serviceItems i{
+    display: block;
+    color: white;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.serviceItems h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.serviceItems p {
+    text-align: justify;
+    padding: 0 1rem;
+}
+
+/* about */
+
+.about {
+    overflow: hidden;
+}
+
+.about-img {
+    height: 40vh;
+    background-image: url(https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about h2 {
+    color: white;
+    margin-bottom: .5rem;
+}
+
+.about p {
+    color: white;
+    font-weight: 300;
+}
+
+/* projects */
+
+.projects {
+    background: white;
+    overflow: hidden;
+}
+
+.projects .title {
+    height: 22.5vh;
+}
+
+.projects .title h2{
+    color: #0D6EFD;
+}
+
+.project-items {
+    height: 35vh;
+    display: block;
+    
+    margin-bottom: 5rem;
+}   
+
+.project-items img{
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    box-shadow: 10px 10px 10px gainsboro;
+}   
+
+/* cta */
+
+.cta {
+    height: 40vh;
+    background-image: url(../img/10.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+
+.cta h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+/* contact */
+
+.contact {
+    height: 90vh;
+    background: white;
+    overflow: hidden;
+}
+ 
+.contact-maps {
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1333&q=80);
+}
+
+.contact-form {
+    margin: 50px;
+}
+
+/* footer */
+.footer {
+    height: 20vh;
+    color: white;
+
+}
+
+
+.footer ul li {
+    list-style: none;
+
+}
+
+.footer p {
+    margin-bottom: 5px;
+
+}
+
+.footer i {
+    font-size: 2rem;
+    margin: 1rem 1rem 0 0;
+
+}
