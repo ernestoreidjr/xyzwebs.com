@@ -19,6 +19,7 @@
   <!-- responsive -->
   <link rel="stylesheet" href="./css/responsive.css">
 
+
 </head>
 
 <body>
@@ -26,25 +27,22 @@
   <!-- navbar -->
   <div class="navigation">
     <div class="nav-container">
-      <div class="logo">
-        <h4>XYZWEBS</h4>
+      <div class="logo" id="home">
+        <h4>RWF</h4>
       </div>
       <div id="iconTrigger" class="burger hide-desktop">
         <i id="icon" class="fas fa-bars"></i>
       </div>
       <ul class="menu hide">
-        <li>Home</li>
-        <li>Services</li>
-        <li>Projects</li>
-        <li>Contacts</li>
-        <li class="hide-desktop">Phone</li>
-        <li class="hide-desktop">Email</li>
+        <li> <a href="#home">Home</a> </li>
+        <li> <a href="#services">Services</a> </li>
+        <li> <a href="#projects">Projects</a> </li>
+        <li> <a href="#contacts">Contact</a> </li>
       </ul>
     </div>
   </div>
 
   <!-- carousel -->
-  
 
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -56,12 +54,13 @@
     <div class="carousel-inner">
       
       <div class="carousel-item  active">
-        <div class="overlay-image" style="background-image: url(./img/1.jpg);"></div>
+        <div class="overlay-image" style="background-image: url(./img/Digital\ Marketing.jpg);"></div>
         <div class="container carousel-slide ">
-          <div class="row">
-            <div class="col-10">
-              <h1>Grow Your Business With Us</h1>
-              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse totam ratione, similique numquam laborum ut.</h4>
+          <div class="row justify-content-center justify-content-lg-start">
+            <div class="col-10 col-md-12">
+              <h1>Grow Your Business <br class="br1"> With Digital Marketing</h1>
+              <p class="p1">Digital Marketing Delivers Conversion.</p>
+              
               <button type="button" class="btn btn-primary button1">Contact Us</button>
             </div>
           </div>
@@ -69,30 +68,31 @@
       </div>
 
       <div class="carousel-item ">
-        <div class="overlay-image" style="background-image: url(./img/4.jpg);"></div>
+        <div class="overlay-image" style="background-image: url(./img/Website\ Marketing.jpg);"></div>
         <div class="container carousel-slide ">
-          <div class="row">
-            <div class="col-10">
-              <h1>Grow Your Business With Us</h1>
-              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aspernatur architecto, illo similique delectus dolor!</h4>
+          <div class="row justify-content-center justify-content-lg-start">
+            <div class="col-10 col-md-12">
+
+              <h1>Website Marketing For <br class="br1"> Small Business </h1>
+              <p class="p1">Get your business in front of new targeted clients.</p>
               <button type="button" class="btn btn-primary button1">Contact Us</button>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="carousel-item ">
+      <!-- <div class="carousel-item ">
         <div class="overlay-image" style="background-image: url(./img/3.jpg);"></div>
         <div class="container carousel-slide ">
-          <div class="row">
-            <div class="col-10">
-              <h1>Business Website Marketing</h1>
-              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quam culpa cum distinctio rerum sunt.</h4>
+          <div class="row justify-content-center justify-content-lg-start">
+            <div class="col-10 col-md-12">
+              <h1> Build Your Online Presence<br class="br1">  Now </h1>
+              <p class="p1">We always look for ways to improve your business.</p>
               <button type="button" class="btn btn-primary button1">Contact Us</button>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
     </div>
 
@@ -109,46 +109,48 @@
 
   <!-- benefits -->
 
-  <div class="container">
-    <div class="row benefits justify-content-around">
-      <div class="col-4 benefits-item">
+  <div class="container container-fluid">
+    <div class="row benefits justify-content-center align-items-center align-items-md-start ">
+      <div class="col-12 col-md-4 col-lg-4 benefits-item">
         <h2>01</h2>
         <h3>Online Presence 24/7</h3>
         <p>Having a website means customers are always able to find you – anytime, anywhere.</p>
 
       </div>
-      <div class="col-4 benefits-item">
+      <div class="col-12 col-md-4 col-lg-4 benefits-item">
         <h2>02</h2>
         <h3>Information Exchange</h3>
         <p>At its simplest, a website provides a quick and easy way of communicating information between buyers and sellers.</p>
 
       </div>
-      <div class="col-4 benefits-item">
+      <div class="col-12 col-md-4 col-lg-4 benefits-item">
         <h2>03</h2>
         <h3>Credibility</h3>
         <p>In today’s modern world, there is an expectation for any reputable company to have some kind of online presence.</p>
-
+      
       </div>
+      
     </div>
+    
   </div>
 
   <!-- services -->
 
-  <div class="services">
+  <div class="services" id="services">
 
     <div class="title row justify-content-center align-items-center">
       <div class="col-12">
-        <h2>Best Services</h2>
-        <p class="text-dark">Lorem ipsum dolor sit amet.</p>
+        <h2>Services</h2>
+        <p class="text-dark">What we do best.</p>
       </div>
     </div>
 
     <div class="container">
       
-      <div class="row justify-content-center align-items-start">
+      <div class="row justify-content-center align-items-start justify-content-lg-around justify-content-xl-center">
 
         
-        <div class="col-3 serviceItems">
+        <div class="col-10 col-md-8 col-lg-3 serviceItems">
           <div class="icon d-flex justify-content-center">
             <div class="icon-container">
               <i class="fas fa-pen-nib"></i>
@@ -156,194 +158,193 @@
           </div>
           
           <h3 class="text-dark">Web Design</h3>
-          <p class="text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi doloribus perspiciatis repellat unde ex inventore!</p>
+          <p class="text-dark">We design website base on our clients business and products. From Business Website, Portfolio, Blogsite & Ecommerce Website.</p>
           <button type="button" class="btn btn-outline-primary button2">Learn More</button>
         </div>
 
-        <div class="col-3 serviceItems">
+        <div class="col-10 col-md-8 col-lg-3 serviceItems">
           <div class="icon d-flex justify-content-center">
             <div class="icon-container">
               <i class="fas fa-code"></i>
             </div>
           </div>  
 
-          <h3 class="text-dark">Web Design</h3>
-          <p class="text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi doloribus perspiciatis repellat unde ex inventore!</p>
+          <h3 class="text-dark">Web Development</h3>
+          <p class="text-dark">Web development services imply designing, building, integrating, scaling and maintaining software that work via intranet or internet.</p>
           <button type="button" class="btn btn-outline-primary button2">Learn More</button>
         </div>
 
-        <div class="col-3 serviceItems">
+        <div class="col-10 col-md-8 col-lg-3 serviceItems">
           <div class="icon d-flex justify-content-center">
             <div class="icon-container">
               <i class="fas fa-search"></i>
             </div>
           </div>
           <h3 class="text-dark">Basic SEO</h3>
-          <p class="text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi doloribus perspiciatis repellat unde ex inventore!</p>
+          <p class="text-dark">Search engine optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines.</p>
           <button type="button" class="btn btn-outline-primary button2">Learn More</button>
         </div>
 
       </div>
 
     </div>
-    
+    <div class="col-12 spacer"></div>
     
   </div>
 
   <!-- about -->
 
   <div class="about">
-    <div class="row align-items-center ">
-      <div class="col-6 about-img" ></div>
-      <div class="col-4 offset-1">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 col-md-6 about-img" ></div>
+      <div class="col-12 col-md-6 about-info">
         <h2>About</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore sequi unde ipsam odit sunt voluptate, id perspiciatis ipsa. Id voluptates tenetur sint laudantium commodi debitis.</p>
-        <button type="button" class="btn btn-outline-light button3">Learn More</button>
+        <p>RWF is a group of  Professional Web Developers who aims to help
+          Small and Mid-size Enterprise (SME) to market their products or services online.</p>
       </div>
     </div>
   </div>
 
   <!-- projects -->
 
-  <div class="projects">
+  <div class="projects" id="projects">
     <div class="title row align-items-center justify-content-center">
       <div class="col">
         <h2>Projects</h2>
-        <p class="text-dark">Lorem ipsum dolor sit amet.</p>
+        <p class="text-dark">Our Works.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center align-items-center">
+
+      <div class="col-md-5 col-lg-5 col-xl-5">
+        <div class="container1 project-items">
+          <img src="/img/Sample Project 1.jpg" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text"><a href="https://istianreid.github.io/Cems.ph/" target="_blank">Click Here To Visit The Site</a></div>
+          </div>
+        </div>
       </div>
       
-    </div>
-    <div class="row justify-content-center">
-      <div class="container row justify-content-center">
-        <div class="col-5 project-items">
-          <img src="/img/proj1.jpg" alt="">
-        </div>
-        <div class="col-5 project-items">
-          <img src="/img/proj2.jpg" alt="">
-        </div>
-        <div class="col-5 project-items">
-          <img src="/img/proj3.jpg" alt="">
-        </div>
-        <div class="col-5 project-items">
-          <img src="/img/proj4.jpg" alt="">
+      <div class="col-md-5 col-lg-5 col-xl-5">
+        <div class="container1 project-items">
+          <img src="/img/Sample Project 2.jpg" alt="Avatar" class="image">
+          <div class="overlay ">
+            <div class="text"><a href="http://foodies-istian-tech.stackstaging.com/" target="_blank">Click Here To Visit The Site</a></div>
+          </div>
         </div>
       </div>
+
+      <div class="col-md-5 col-lg-5 col-xl-5">
+        <div class="container1 project-items">
+          <img src="/img/Sample Project 3.jpg" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text"><a href="https://istianreid.github.io/Visla-Cloned-Website/" target="_blank">Click Here To Visit The Site</a></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-5 col-lg-5 col-xl-5">
+        <div class="container1 project-items">
+          <img src="/img/Sample Project 4.jpg" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text"><a href="https://bloodmatchclient.herokuapp.com/" target="_blank">Click Here To Visit The Site</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 spacer"></div>
     </div>
   </div>
 
   <!-- cta -->
 
-  <div class="cta d-flex align-items-center">
+  <div class="cta">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-8">
-          <h2>Lorem ipsum dolor sit amet.</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, praesentium voluptas necessitatibus cumque earum tempora laborum suscipit impedit maxime dicta repellat, ea amet placeat totam?</p>
-          <button type="button" class="btn btn-outline-light button4">Contact Us</button>
+      <div class=" cta-item row justify-content-center align-items-center align-items-xl-center">
+        <div class="col-10 col-md-8 col-xl-12">
+          <h2>We develop websites that ignite your business.</h2>
+          <p>In a World of Technology, People Make the Difference.</p>
         </div>
       </div>
     </div>
   </div>
+  
 
   <!-- contact -->
-  <div class="contact">
-    <div class="row">
-      <div class="col-6 contact-maps"></div>
-      <div class="col-5 contact-form">
-        <h2 class="text-dark mb-5">Hello, there! We’ll be glad to hear from you. Send us your thoughts.</h2>
 
-        <div class="mb-2 col-8">
-          <label for="exampleFormControlInput1" class="form-label">Name</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1"  placeholder="Name">
+  <div class="container-fluid contact">
+    <div class="row justify-content-center align-items-center justify-content-lg-start">
+
+      
+      <div class="col-12 col-md-12 col-lg-6 contact-maps"></div>
+
+      <div class=" col-md-12 col-lg-6 container row justify-content-center">
+
+        <div class="col-11 col-xl-10  contact-form" id="contacts">
+          <h2 class="text-dark mb-4">Hello, there! We’ll be glad to hear from you. Send us your thoughts.</h2>
+  
+          <div class="col-12 col-md-8 col-lg-12 mb-3">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1"  placeholder="Your Name">
+          </div>
+  
+          <div class="col-12 col-md-8 col-lg-12 mb-3">
+  
+            <label for="exampleFormControlInput1">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email">
+          </div>
+  
+          <div class="col-12 col-md-8 col-lg-12 mb-3">
+            <label for="exampleFormControlInput1">Phone</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Phone">
+          </div>
+  
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Something..."></textarea>
+          </div>
+  
+          <button type="button" class="btn btn-primary button5 mt-2 mb-5"> <i class="far fa-envelope mx-2"></i> Submit Message</button>
         </div>
-
-        <div class="mb-2 col-8">
-
-          <label for="exampleFormControlInput1" class="form-label">Email</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-        </div>
-
-        <div class="mb-2 col-8">
-          <label for="exampleFormControlInput1" class="form-label">Phone</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+123456789">
-        </div>
-
-        <div class="mb-2">
-          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Something..."></textarea>
-        </div>
-
-        <button type="button" class="btn btn-primary button1">Submit Message</button>
+        
       </div>
+      
     </div>
   </div>
 
   <!-- footer -->
 
   <div class="footer container">
-    <div class="row mt-4">
-      <div class="col-3">
-        <h4>XYZWEBS</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad adipisci ea ut.</p>
+    <div class="row justify-content-md-center justify-content-xl-center">
+      <div class="col-12 col-md-3 col-xl-3 mb-3">
+        <h5>RWF</h5>
+        <p>Reid Web Freelance</p>
       </div>
-      <div class="col-2">
-        <h4>Menu</h4>
-        <ul>
-          <li>Home</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contacts</li>
-        </ul>
-      </div>
-      <div class="col-4">
-        <h4>Contact Information</h4>
+
+      <div class="col-12 col-md-4 col-xl-3 mb-3">
+        <h5>Contact Information</h5>
         <p>Email: ernestoreidjr@gmail.com</p>
         <p>Phone: 09618773398</p>
       </div>
-      <div class="col-2">
-        <h4>Social Media</h4>
+      
+      <div class="col-12 col-md-2 col-xl-3 footer-hide">
+        <h5>Menu</h5>
+        <ul>
+          <li> <a href="#home">Home</a> </li>
+          <li> <a href="#services">Services</a> </li>
+          <li> <a href="#projects">Projects</a> </li>
+          <li> <a href="#contacts">Contact</a> </li>
+        </ul>
+      </div>
+      
+      <div class="col-12 col-md-3 col-xl-3 mb-3">
+        <h5>Social Media</h5>
         <i class="fab fa-facebook"></i>
         <i class="fab fa-instagram"></i>
         <i class="fab fa-twitter"></i>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-  
- 
-
-
-    
-
-    
-    
-    
-    
-
-    
-
-
-
-
-
-  
-
-  
     
 </body>
 

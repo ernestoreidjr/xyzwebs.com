@@ -3,56 +3,23 @@ html, body {
     padding: 0;
     background: #0D6EFD;
     font-family: Poppins;
+    overflow-x: hidden;
 }   
+.spacer {
+    height: 10vh;
 
-h1 {
-    font-size: 80px;
-    font-weight: 700;
 }
 
-h2 {
-    font-size: 30px;
-    font-weight: 500;
+.br1 {
+    display: none;
 }
 
-h3 {
-    font-size: 24px;
-    font-weight: 500;
-}
-
-h4 {
-    font-size: 20px;
-    font-weight: 300;
-}
-
-p {
-    font-weight: 300;
-}
-
-.btn.btn-primary.button1 {
-    padding: 15px 30px;
-    font-size: 20px;
-    margin-top: 20px;
-}
-
-.btn.btn-outline-primary.button2 {
-    padding: 15px 30px;
-    display: block;
-    margin: 2rem auto 1rem auto;
-}
-
-.btn.btn-outline-light.button3 {
-    padding: 15px 30px;
-    margin: .5rem 0;
-}
-
-.btn.btn-outline-light.button4 {
-    padding: 15px 30px;
-    display: block;
-    margin: 2rem auto;
+::-webkit-scrollbar {
+    display: none;
 }
 
 /* navbar */
+
 /* helper */
 
 .hide-desktop {
@@ -73,7 +40,7 @@ p {
     height: 8vh;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 5rem 1fr auto 5rem;
+    grid-template-columns: 30px 1fr auto 30px;
 }
 
 .navigation .logo {
@@ -84,7 +51,7 @@ p {
 
 .navigation .logo h4{
     font-family: Poppins;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0px;
     color: #0D6EFD;
     margin: 0;
@@ -104,12 +71,13 @@ p {
     grid-auto-columns: 120px;
 }
 
-.navigation .menu li {
+.navigation .menu li a {
+    text-decoration: none;
     color: white;
     font-size: 14px;
 }
 
-.navigation .menu li:hover{
+.navigation .menu li a:hover {
     color: #0D6EFD;
     cursor: pointer;
 }
@@ -119,7 +87,7 @@ p {
 .carousel-item {
     height: 70vh;
     
-    background: #0D6EFD;
+    background: #212529;
     color: white;
     position: relative;
     background-repeat: no-repeat;
@@ -127,6 +95,10 @@ p {
     background-size: cover;
 
     overflow: hidden;
+}
+
+.carousel-control-prev, .carousel-control-next, .carousel-indicators {
+    display: none;
 }
 
 .container.carousel-slide {
@@ -144,12 +116,10 @@ p {
 
 .carousel-item h1 {
     font-weight: 500;
-    font-family: Poppins;
 }
 
 .carousel-item p {
     font-weight: 300;
-    font-family: Poppins;
 }
 
 .overlay-image {
@@ -161,18 +131,24 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity: 1;
+    opacity: .8;
+}
+
+.btn.btn-primary.button1 {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-top: 5px;
 }
 
 /* benefits */
 
 
-/* .benefits {
-    
-} */
-
+.benefits {
+    background: #0D6EFD;
+    overflow: hidden;
+}
 .benefits-item {
-    margin: 2rem 0;
+    padding: 2rem;
 }
 
 .benefits h2 {
@@ -196,7 +172,7 @@ p {
 }
 
 .title {
-    height: 22.5vh;
+    height: 30vh;
 }
 
 .title h2{
@@ -211,9 +187,9 @@ p {
 
 .serviceItems {
     padding: 1rem;
-    margin: 0 2rem;
-    margin-bottom: 5rem;
-    border-radius: 5px;
+    margin: 0;
+    margin-bottom: 2rem;
+    border-radius: 4px;
     border: solid 1px #0D6EFD;
 }
 
@@ -224,14 +200,14 @@ p {
     background: #0D6EFD;
     height: 75px;
     width: 75px;
-    border-radius: 80%;
+    border-radius: 50%;
 }
 
 .serviceItems i{
     display: block;
     color: white;
     line-height: 75px;
-    font-size: 30px;
+    font-size: 22.5px;
 }
 
 .serviceItems h3 {
@@ -244,6 +220,11 @@ p {
     padding: 0 1rem;
 }
 
+.btn.btn-outline-primary.button2 {
+    padding: 10px 20px;
+    display: block;
+    margin: 2rem auto 1rem auto;
+}
 /* about */
 
 .about {
@@ -252,20 +233,25 @@ p {
 
 .about-img {
     height: 40vh;
-    background-image: url(https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    background-image: url(../img/About.jpg);
+    
+    background-position: bottom;
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
 }
 
-.about h2 {
+.about-info {
+    background-color: #0D6EFD;
+    padding: 4rem;
+}
+
+.about-info h2 {
     color: white;
-    margin-bottom: .5rem;
 }
 
 .about p {
     color: white;
-    font-weight: 300;
+    text-align: justify;
 }
 
 /* projects */
@@ -276,7 +262,7 @@ p {
 }
 
 .projects .title {
-    height: 22.5vh;
+    height: 30vh;
 }
 
 .projects .title h2{
@@ -284,78 +270,144 @@ p {
 }
 
 .project-items {
-    height: 35vh;
-    display: block;
-    
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }   
 
 .project-items img{
     display: block;
-    margin: 0 auto;
-    height: 100%;
-    box-shadow: 10px 10px 10px gainsboro;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0rem;
+
+    -webkit-box-shadow: 2px 5px 10px -2px rgba(0,0,0,0.4);
+    -moz-box-shadow: 2px 5px 10px -2px rgba(0,0,0,0.4);
+    box-shadow: 2px 5px 10px -2px rgba(0,0,0,0.4);
 }   
+
+.container1 {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.overlay {
+    margin: auto;
+    margin-bottom: 0rem;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #0D6EFD;
+}
+
+.container1:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
 /* cta */
 
 .cta {
-    height: 40vh;
-    background-image: url(../img/10.jpg);
+    
+    background-image: url(../img/CTA.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
-    
+    position: relative;
+}
+
+.cta-item {
+    height: 40vh; 
 }
 
 .cta h2 {
     text-align: center;
     margin-bottom: 1rem;
+    color: white;
 }
 
 .cta p {
-    text-align: justify;
+    text-align: center;
     margin-bottom: 1rem;
+    color: white; 
 }
 
 /* contact */
 
 .contact {
-    height: 90vh;
     background: white;
     overflow: hidden;
 }
  
 .contact-maps {
-    height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1333&q=80);
+    height: 60vh;
+    background-image: url(../img/Map.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
 .contact-form {
     margin: 50px;
 }
 
-/* footer */
-.footer {
-    height: 20vh;
-    color: white;
-
+.btn.btn-primary.button5 {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-top: 5px;
 }
 
+/* footer */
+.footer {
+    background-color: #0D6EFD;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-hide {
+    display: none;
+}
 
 .footer ul li {
-    list-style: none;
+    
+   list-style: none;
+}
 
+.footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
 }
 
 .footer p {
     margin-bottom: 5px;
+    font-weight: 300;
 
 }
 
 .footer i {
     font-size: 2rem;
     margin: 1rem 1rem 0 0;
-
 }
