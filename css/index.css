@@ -361,7 +361,7 @@ html, body {
  
 .contact-maps {
     height: 60vh;
-    background-image: url(../img/Map.jpg);
+    background-image: url(img/Map.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
